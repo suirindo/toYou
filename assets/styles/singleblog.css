@@ -1,8 +1,8 @@
-.hero {
+.banner {
     text-align: center;
 }
 
-.hero > img {
+.banner > img {
     max-height: 500px;
     max-width: 100%;
 }
