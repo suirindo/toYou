@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="hero">
+        <div class="banner">
             <img :src="data.image" alt="blog-image">
         </div>
         <div class="wrapper">  
