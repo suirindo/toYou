@@ -11,5 +11,5 @@ const props = defineProps({
     numberPages: Number,
 })
 
-const paginationLinks = Array.from({ length: props.numberPages }, (_, i) => i === 0 ? `/blog` : `/blog/page/${i + 1}`)
+const paginationLinks = Array.from({ length: props.numberPages }, (_, i) => i === 0 ? `/jobOffer` : `/jobOffer/page/${i + 1}`)
 </script>

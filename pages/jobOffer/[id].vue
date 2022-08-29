@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="banner">
-            <img :src="data.image" alt="blog-image">
+            <img :src="data.image" alt="jobOffer-image">
         </div>
         <div class="wrapper">  
             <div class="container">               
@@ -20,7 +20,7 @@ const { data } = await useAsyncData(useRoute().path, () =>
     queryContent(useRoute().path).findOne()
 )
 
-const [prev, next] = await queryContent("/blog")
+const [prev, next] = await queryContent("/jobOffer")
     .sort({ id: 1 })
     .findSurround(useRoute().path)
 

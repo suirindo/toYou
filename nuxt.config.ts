@@ -9,8 +9,8 @@ export default defineNuxtConfig({
         "~/assets/styles/common.css",
         "~/assets/styles/layout.css",
         "~/assets/styles/index.css",
-        "~/assets/styles/blog.css",
+        "~/assets/styles/jobOffer.css",
         "~/assets/styles/contact.css",
-        "~/assets/styles/singleblog.css",
+        "~/assets/styles/singlejobOffer.css",
     ]
 })
