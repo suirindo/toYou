@@ -38,9 +38,9 @@ const alljobOffers = await queryContent("/jobOffer").find()
 const numberPages = Math.ceil(alljobOffers.length / jobOffersPerPage)
 
 useHead({
-    title: `ブログ| ${currentPage}`,
+    title: `求人票| ${currentPage}`,
     meta: [
-        { name: "description", content: "ブログページです"}
+        { name: "description", content: "求人票ページです"}
     ],
 })
 </script>
