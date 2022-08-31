@@ -23,12 +23,12 @@
 //import Pagination from '../../components/pagination.vue';
 const jobOffersPerPage = 5
 const { data } = await useAsyncData("jobOfferQuery", () => 
-    queryContent("/jobOffer")
+    queryContent("/joboffer")
     .sort({ id: -1 })
     .limit(jobOffersPerPage)
     .find()
 )
-const alljobOffers = await queryContent("/jobOffer").find()
+const alljobOffers = await queryContent("/joboffer").find()
 
 const numberPages = Math.ceil(alljobOffers.length / jobOffersPerPage)
 

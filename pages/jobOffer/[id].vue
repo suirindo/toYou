@@ -20,7 +20,7 @@ const { data } = await useAsyncData(useRoute().path, () =>
     queryContent(useRoute().path).findOne()
 )
 
-const [prev, next] = await queryContent("/jobOffer")
+const [prev, next] = await queryContent("/joboffer")
     .sort({ id: 1 })
     .findSurround(useRoute().path)
 

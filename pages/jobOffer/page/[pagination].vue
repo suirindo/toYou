@@ -27,13 +27,13 @@ const jobOffersPerPage = 5
 const currentPage = useRoute().params.pagination
 
 const { data } = await useAsyncData("jobOfferQuery", () => 
-    queryContent("/jobOffer")
+    queryContent("/joboffer")
     .sort({ id: -1 })
     .limit(jobOffersPerPage)
     .skip(jobOffersPerPage * (currentPage - 1))
     .find()
 )
-const alljobOffers = await queryContent("/jobOffer").find()
+const alljobOffers = await queryContent("/joboffer").find()
 
 const numberPages = Math.ceil(alljobOffers.length / jobOffersPerPage)
 
