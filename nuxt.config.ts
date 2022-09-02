@@ -4,6 +4,7 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
     modules: [
         "@nuxt/content",
+        "@nuxtjs/tailwindcss",
     ],
     css: [
         "~/assets/styles/common.css",
@@ -12,5 +13,12 @@ export default defineNuxtConfig({
         "~/assets/styles/jobOffer.css",
         "~/assets/styles/contact.css",
         "~/assets/styles/singlejobOffer.css",
-    ]
+    ],
+    app: {
+        head: {
+            htmlAttrs: {
+                "data-theme": "cupcake",
+            }
+        }
+    }
 })

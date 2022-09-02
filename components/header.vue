@@ -9,6 +9,7 @@
                 <ul>
                     <li><NuxtLink to="/jobOffer">jobOffer</NuxtLink></li>
                     <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+                    <li><NuxtLink to="/landing">Landing</NuxtLink></li>
                 </ul>
             </div>
         </div>

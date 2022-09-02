@@ -8,6 +8,7 @@
             <hr/>
             <NuxtLink to="/jobOffer">jobOffer</NuxtLink>
             <NuxtLink to="/contact">Contact</NuxtLink>
+            <NuxtLink to="/landing">Landing</NuxtLink>
             <p>©{{ new Date().getFullYear() }} Tomohiro Iida</p>
         </div>
     </footer>
